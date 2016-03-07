@@ -132,6 +132,9 @@ public class PreferenceStorageView extends AppCompatActivity {
     }
 
     public void cancelPreference(View view){
+
+        PreferenceStorageView.this.finish();
+
         Intent intent = new Intent(this, Storage.class);
         startActivity(intent);
     }
