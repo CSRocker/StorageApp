@@ -106,7 +106,8 @@ public class Storage extends AppCompatActivity {
     }
 
     public void close(View view){
-        finish();
+
+        Storage.this.finish();
         System.exit(0);
     }
 

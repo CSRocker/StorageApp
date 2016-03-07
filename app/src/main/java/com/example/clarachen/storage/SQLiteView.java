@@ -118,6 +118,8 @@ public class SQLiteView extends AppCompatActivity {
 
         }
 
+        SQLiteView.this.finish();
+
         Intent intent = new Intent(this, Storage.class);
         startActivity(intent);
     }
@@ -125,6 +127,7 @@ public class SQLiteView extends AppCompatActivity {
     public void cancelSqlite(View view){
 
         SQLiteView.this.finish();
+
         Intent intent = new Intent(this, Storage.class);
         startActivity(intent);
     }

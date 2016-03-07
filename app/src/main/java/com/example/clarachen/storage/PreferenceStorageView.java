@@ -127,6 +127,8 @@ public class PreferenceStorageView extends AppCompatActivity {
             }
         }
 
+        PreferenceStorageView.this.finish();
+
         Intent intent = new Intent(this,Storage.class);
         startActivity(intent);
     }
