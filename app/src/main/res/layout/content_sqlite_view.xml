@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/lightseagreen"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.clarachen.storage.SQLiteView"
+    tools:showIn="@layout/activity_sqlite_view">
+
+    <TextView
+        android:id="@+id/sqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/sqlite_view"
+        android:textSize="@dimen/app_name_size"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/blogmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Blog Message"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/editText_blogmessage"
+        android:layout_toLeftOf="@+id/sqlite"
+        android:layout_toStartOf="@+id/sqlite" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:text="Max. 255 Characters Only"
+        android:maxLength="255"
+        android:background="@color/white"
+        android:id="@+id/editText_blogmessage"
+        android:layout_below="@+id/sqlite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="82dp"
+        android:ems="10"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:layout_marginTop="103dp"
+        android:layout_below="@+id/editText_blogmessage"
+        android:layout_toLeftOf="@+id/editText_blogmessage"
+        android:layout_toStartOf="@+id/editText_blogmessage"
+        android:onClick="saveSqlite"/>
+
+
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp"
+        android:layout_alignTop="@+id/save"
+        android:layout_alignLeft="@+id/editText_blogmessage"
+        android:layout_alignStart="@+id/editText_blogmessage"
+        android:onClick="cancelSqlite"/>
+
+
+
+</RelativeLayout>

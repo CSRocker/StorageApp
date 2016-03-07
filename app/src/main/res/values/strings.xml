@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Android Data Storage Sample</string>
+    <string name="preference_storage">Preference Storage View</string>
+    <string name="sqlite_view">SQLite View</string>
+
+    <string name="preferences">Preferences</string>
+    <string name="sqlite">SQLite</string>
+
+    <string name="close">Close</string>
+    <string name="title_activity_sqlite_view">SQLiteView</string>
+    <string name="title_activity_preference_storage_view">PreferenceStorageView</string>
+
+
+
+
+</resources>
